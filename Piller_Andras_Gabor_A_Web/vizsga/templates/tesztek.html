@@ -9,7 +9,7 @@
     <title>Tesztek</title>
 </head>
 <body>
-    <main class="w-50 mx-auto text-center">
+    <main class="w-75 mx-auto text-center">
         <header><h1>Tesztkérdések</h1></header>
         <aside class="mb-3 px-3 border border-dark">
             <form method="GET">
@@ -27,7 +27,7 @@
                 {% for teszt in tesztfilter.qs %}
                     <div class="card">
                             <div class="card-body">
-                            <h5>{{ teszt.kerdes }}</h5>
+                            <h5 class="bg-secondary rounded px-4 text-light">{{ teszt.kerdes }}</h5>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="valasz_{{ teszt.id }}" id="v1" value="{{ teszt.v1 }}">
                                 <label class="form-check-label" for="v1">{{ teszt.v1 }}</label>
